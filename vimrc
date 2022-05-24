@@ -142,7 +142,8 @@ call plug#end()
 " MAPPINGS ---------------------------------------------------------------
 " Mappings code goes here.
 " esc remap
-imap jj <Esc>
+inoremap jj <esc>
+vnoremap jj <esc>
 
 " for command mode
 nnoremap <S-Tab> <<
@@ -151,4 +152,42 @@ nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 
 " STATUS LINE ------------------------------------------------------------
-" Status bar code goes here.
+set laststatus=2
+
+function! GitBranch()
+  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
+
+function! StatuslineGit()
+  let l:branchname = GitBranch()
+  return strlen(l:branchname) > 0 ? l:branchname : 'none'
+endfunction
+
+let g:currentmode={
+	\ 'n'  : 'NORMAL',
+	\ 'v'  : 'VISUAL',
+	\ 'V'  : 'V·LINE',
+	\ '␖' : 'V·BLOCK',
+	\ 's'  : 'SELECT',
+	\ 'S'  : 'S·LINE',
+	\ '␓' : 'S·BLOCK',
+	\ 'i'  : 'INSERT',
+	\ 'R'  : 'REPLACE',
+    \ 'Rv' : 'V·REPLACE',
+	\ 'c'  : 'COMMAND',
+	\}
+
+set statusline=
+set statusline+=%{g:currentmode[mode()]} 
+set statusline+=%#PmenuSel#
+set statusline+=%#LineNr#
+set statusline+=\ %f
+set statusline+=%m\
+set statusline+=%=
+set statusline+=%#CursorColumn#
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\[%{&fileformat}\]
+set statusline+=\ [git:%{StatuslineGit()}]
