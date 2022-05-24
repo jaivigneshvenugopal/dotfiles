@@ -1,4 +1,3 @@
-" Comments in Vimscript start with a `"`.
 
 " If you open this file in Vim, it'll be syntax highlighted for you.
 
@@ -182,12 +181,12 @@ set statusline+=%{g:currentmode[mode()]}
 set statusline+=%#PmenuSel#
 set statusline+=%#LineNr#
 set statusline+=\ %f
-set statusline+=%m\
+set statusline+=%m
 set statusline+=%=
 set statusline+=%#CursorColumn#
-set statusline+=\ %p%%
 set statusline+=\ %l:%c
+set statusline+=\ %p%%
 set statusline+=\ %y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\[%{&fileformat}\]
-set statusline+=\ [git:%{StatuslineGit()}]
+set statusline+=\ git[%{StatuslineGit()}]
