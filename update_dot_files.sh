@@ -7,6 +7,3 @@ cp ~/.vimrc ~/dotfiles/vimrc
 
 cp ~/.tmux.conf ~/dotfiles/tmux.conf
 
-
-cd ~/dotfiles
-
