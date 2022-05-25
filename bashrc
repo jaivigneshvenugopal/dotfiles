@@ -122,6 +122,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+alias editvim='vim ~/.vimrc'
+alias editbash='vim ~/.bashrc'
+alias updatedot='sh ~/update_dot_files.sh; cd ~/dotfiles'
+
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"

@@ -150,6 +150,10 @@ nnoremap <S-Tab> <<
 " for insert mode
 inoremap <S-Tab> <C-d>
 
+" to move between vim tabs
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+
 " STATUS LINE ------------------------------------------------------------
 set laststatus=2
 
