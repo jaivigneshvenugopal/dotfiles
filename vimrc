@@ -79,7 +79,7 @@ syntax on
 colorscheme molokai
 hi Normal ctermbg=none
 hi Comment ctermfg=8
-hi Visual ctermbg=11
+hi Visual ctermbg=11 ctermfg=black
 
 " Add numbers to each line on the left-hand side.
 set number
