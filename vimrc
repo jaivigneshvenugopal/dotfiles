@@ -159,6 +159,9 @@ inoremap <S-Tab> <C-d>
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
+" clear search highlight
+nnoremap <C-l> :nohl<CR><C-L>
+
 " STATUS LINE ------------------------------------------------------------
 set laststatus=2
 
