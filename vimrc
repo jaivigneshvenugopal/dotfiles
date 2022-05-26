@@ -79,6 +79,7 @@ syntax on
 colorscheme molokai
 hi Normal ctermbg=none
 hi Comment ctermfg=8
+hi Visual ctermbg=11
 
 " Add numbers to each line on the left-hand side.
 set number
@@ -131,7 +132,7 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 set cursorline
-hi CursorLine ctermbg=8 "8 = dark gray
+" hi CursorLine ctermbg=8 "8 = dark gray
 
 " PLUGINS ----------------------------------------------------------------
 
