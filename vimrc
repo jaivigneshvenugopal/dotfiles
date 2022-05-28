@@ -77,7 +77,6 @@ colorscheme molokai
 hi Normal ctermbg=none
 hi Comment ctermfg=8
 hi Visual ctermbg=11 ctermfg=black
-hi StatusLine guibg=black ctermbg=black guifg=green ctermfg=green
 
 " Add numbers to each line on the left-hand side.
 set number
@@ -187,13 +186,11 @@ let g:currentmode={
 	\}
 
 set statusline=
+set statusline+=%#SignColumn#
 set statusline+=%{g:currentmode[mode()]} 
-set statusline+=%#PmenuSel#
-set statusline+=%#LineNr#
 set statusline+=\ %f
 set statusline+=%m
 set statusline+=%=
-set statusline+=%#CursorColumn#
 set statusline+=\ %l:%c
 set statusline+=\ %p%%
 set statusline+=\ %y
