@@ -62,9 +62,6 @@ set noerrorbells visualbell t_vb=
 " sometimes be convenient.
 set mouse+=a
 
-" Disable compatibility with vi which can cause unexpected issues.
-set nocompatible
-
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
 
@@ -80,6 +77,7 @@ colorscheme molokai
 hi Normal ctermbg=none
 hi Comment ctermfg=8
 hi Visual ctermbg=11 ctermfg=black
+hi StatusLine guibg=black ctermbg=black guifg=green ctermfg=green
 
 " Add numbers to each line on the left-hand side.
 set number
