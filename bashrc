@@ -124,6 +124,7 @@ fi
 
 alias editvim='vim ~/.vimrc'
 alias editbash='vim ~/.bashrc'
+alias editmux='vim ~/.tmux.conf'
 alias updatedot='sh ~/update_dot_files.sh; cd ~/dotfiles'
 
 export PATH="$HOME/.pyenv/bin:$PATH"
