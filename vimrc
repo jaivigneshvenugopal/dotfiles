@@ -154,11 +154,8 @@ nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 
 " to move between vim tabs
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
-
-" clear search highlight
-nnoremap <C-l> :nohl<CR><C-L>
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
 
 " STATUS LINE ------------------------------------------------------------
 set laststatus=2
