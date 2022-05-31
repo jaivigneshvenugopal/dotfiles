@@ -137,7 +137,7 @@ set cursorline
 call plug#begin('~/.vim/plugged')
  
 Plug 'preservim/nerdtree'
-Plug 'crusoexia/vim-monokai'
+map <F1> :NERDTreeToggle<CR>
 
 call plug#end()
 
@@ -146,12 +146,6 @@ call plug#end()
 " esc remap
 inoremap jj <esc>
 vnoremap jj <esc>
-
-" for command mode
-nnoremap <S-Tab> <<
-
-" for insert mode
-inoremap <S-Tab> <C-d>
 
 " to move between vim tabs
 nnoremap <C-h> :tabprevious<CR>
