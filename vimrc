@@ -73,7 +73,7 @@ filetype indent on
 
 " Turn syntax highlighting on.
 syntax on
-colorscheme molokai
+colorscheme tastymonokai
 hi Normal ctermbg=none
 hi Comment ctermfg=8
 hi Visual ctermbg=11 ctermfg=black
@@ -138,6 +138,12 @@ call plug#begin('~/.vim/plugged')
  
 Plug 'preservim/nerdtree'
 map <F1> :NERDTreeToggle<CR>
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+nnoremap <C-p> :Files<CR>
+let g:fzf_layout = { 'window': { 'width': 1, 'height': 1 } }
+let $FZF_DEFAULT_OPTS = '--reverse'
 
 call plug#end()
 
