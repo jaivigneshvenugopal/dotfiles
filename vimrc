@@ -137,7 +137,7 @@ set cursorline
 call plug#begin('~/.vim/plugged')
  
 Plug 'preservim/nerdtree'
-map <F1> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
