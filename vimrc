@@ -138,6 +138,8 @@ call plug#begin('~/.vim/plugged')
  
 Plug 'preservim/nerdtree'
 nnoremap <C-n> :NERDTreeToggle<CR>
+" Close automatically
+let NERDTreeQuitOnOpen = 1
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
