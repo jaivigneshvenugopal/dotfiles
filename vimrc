@@ -327,7 +327,7 @@ call plug#end()
 " Mappings code goes here.
 " esc remap
 inoremap jj <esc>
-vnoremap jj <esc>
+vnoremap \\ <esc>
 
 " to move between vim tabs
 nnoremap <C-h> :tabprevious<CR>
