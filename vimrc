@@ -110,9 +110,6 @@ set showcmd
 " Show the mode you are on the last line.
 set showmode
 
-" Show matching words during a search.
-set showmatch
-
 " Use highlighting when doing a search.
 set hlsearch
 
@@ -134,6 +131,10 @@ set cursorline
 hi CursorLineNr guifg=#af00af
 set cursorline
 set cursorlineopt=number
+
+" Sometimes terminal registers weird lettes in normal mode. Hopefully this
+" fixes it? 
+let g:auto_type_info=0"
 
 " PLUGINS ----------------------------------------------------------------
 
