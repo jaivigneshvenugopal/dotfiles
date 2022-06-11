@@ -143,8 +143,6 @@ Plug 'preservim/nerdtree'
 nnoremap <C-n> :NERDTreeToggle<CR>
 " Close automatically
 let NERDTreeQuitOnOpen = 1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
