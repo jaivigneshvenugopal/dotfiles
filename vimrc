@@ -151,7 +151,7 @@ let g:indentLine_color_term = 239
 set conceallevel=1
 let g:indentLine_conceallevel=1
 
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 
 Plug 'chrisbra/vim-commentary'
 
