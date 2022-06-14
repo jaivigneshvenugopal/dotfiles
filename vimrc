@@ -1,6 +1,3 @@
-
-" If you open this file in Vim, it'll be syntax highlighted for you.
-
 " Vim is based on Vi. Setting `nocompatible` switches from the default
 " Vi-compatibility mode and enables useful Vim functionality. This
 " configuration option turns out not to be necessary for the file named
@@ -73,11 +70,6 @@ filetype indent on
 
 " Turn syntax highlighting on.
 syntax on
-colorscheme tastymonokai
-hi Normal ctermbg=none
-hi Comment ctermfg=8
-hi Visual ctermbg=11 ctermfg=black
-hi StatusLine cterm=none ctermbg=black ctermfg=green
 
 " Add numbers to each line on the left-hand side.
 set number
@@ -139,7 +131,9 @@ let g:auto_type_info=0"
 " PLUGINS ----------------------------------------------------------------
 
 call plug#begin('~/.vim/plugged')
- 
+
+Plug 'patstockwell/vim-monokai-tasty'
+
 Plug 'preservim/nerdtree'
 nnoremap <C-n> :NERDTreeToggle<CR>
 " Close automatically
@@ -325,6 +319,15 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 call plug#end()
 
+" Plugins related settings - tastymonokai
+let g:vim_monokai_tasty_italic = 1
+colorscheme vim-monokai-tasty
+set t_Co=256
+hi Normal ctermbg=none
+hi Comment ctermfg=8
+hi Visual ctermbg=11 ctermfg=black
+hi StatusLine cterm=none ctermbg=black ctermfg=green
+
 " MAPPINGS ---------------------------------------------------------------
 " Mappings code goes here.
 " esc remap
@@ -334,6 +337,10 @@ vnoremap \\ <esc>
 " to move between vim tabs
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
+
+" to add empty line in normal mode
+map <leader>o o<ESC>
+map <leader>O O<ESC>
 
 " STATUS LINE ------------------------------------------------------------
 set laststatus=2
