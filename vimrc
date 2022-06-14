@@ -343,6 +343,14 @@ nnoremap <C-l> :tabnext<CR>
 map <leader>o o<ESC>
 map <leader>O O<ESC>
 
+" indent lines
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+inoremap <S-Tab> <C-D>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 " STATUS LINE ------------------------------------------------------------
 set laststatus=2
 
