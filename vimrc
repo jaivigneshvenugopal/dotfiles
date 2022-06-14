@@ -127,7 +127,6 @@ set cursorlineopt=number
 " Sometimes terminal registers weird lettes in normal mode. Hopefully this
 " fixes it? 
 let g:auto_type_info=0"
-
 " PLUGINS ----------------------------------------------------------------
 
 call plug#begin('~/.vim/plugged')
@@ -151,6 +150,8 @@ let g:indentLine_setConceal = 0
 let g:indentLine_color_term = 239 
 set conceallevel=1
 let g:indentLine_conceallevel=1
+
+Plug 'jiangmiao/auto-pairs'
 
 Plug 'chrisbra/vim-commentary'
 
