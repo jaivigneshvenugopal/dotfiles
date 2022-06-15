@@ -127,6 +127,10 @@ set cursorlineopt=number
 " Sometimes terminal registers weird lettes in normal mode. Hopefully this
 " fixes it? 
 let g:auto_type_info=0"
+
+" Open vim in insert mode for new Files
+autocmd VimEnter * if wordcount()['chars'] == 0 | startinsert | endif
+
 " PLUGINS ----------------------------------------------------------------
 
 call plug#begin('~/.vim/plugged')
