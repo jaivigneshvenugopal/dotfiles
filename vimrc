@@ -124,10 +124,6 @@ hi CursorLineNr guifg=#af00af
 set cursorline
 set cursorlineopt=number
 
-" Sometimes terminal registers weird lettes in normal mode. Hopefully this
-" fixes it? 
-let g:auto_type_info=0"
-
 " Open vim in insert mode for new Files
 autocmd VimEnter * if wordcount()['chars'] == 0 | startinsert | endif
 
@@ -148,16 +144,17 @@ nnoremap <C-p> :Files<CR>
 let g:fzf_layout = { 'window': { 'width': 1, 'height': 1 } }
 let $FZF_DEFAULT_OPTS = '--reverse'
 
-Plug 'Yggdroot/indentLine'
-let g:indentLine_faster = 1
-let g:indentLine_setConceal = 0
-let g:indentLine_color_term = 239 
-set conceallevel=1
-let g:indentLine_conceallevel=1
-
-" Plug 'jiangmiao/auto-pairs'
-
 Plug 'chrisbra/vim-commentary'
+
+Plug 'scrooloose/syntastic'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
@@ -340,6 +337,7 @@ inoremap jj <esc>
 vnoremap \\ <esc>
 
 " to move between vim tabs
+nnoremap <C-/> <C-h>
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 
