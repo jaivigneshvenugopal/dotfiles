@@ -6,7 +6,7 @@ source ~/.vim/plugins/nerdtree.vim
 source ~/.vim/plugins/fzf.vim
 source ~/.vim/plugins/commentary.vim
 source ~/.vim/plugins/syntastic.vim
-" source ~/.vim/plugins/coc.vim
+source ~/.vim/plugins/coc.vim
 
 call plug#end()
 
@@ -180,6 +180,9 @@ vnoremap <S-Tab> <gv
 
 " Allow gf to open non-existent files
 map gf :tabnew <cfile><cr>
+
+" open current file in default program
+nmap <leader>x :!xdg-open %<cr><cr>
 
 " STATUS LINE ------------------------------------------------------------
 set laststatus=2
