@@ -156,12 +156,14 @@ hi StatusLine cterm=none ctermbg=black ctermfg=green
 
 " MAPPINGS ---------------------------------------------------------------
 " Mappings code goes here.
+" quick exit without saving
+map <C-w> :q<CR>
+
 " esc remap
 inoremap jj <esc>
 vnoremap \\ <esc>
 
 " to move between vim tabs
-nnoremap <C-/> <C-h>
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 
