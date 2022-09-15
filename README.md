@@ -72,6 +72,10 @@ To open a file in a new tab
 CTRL + t
 ```
 
-
 #### syntastic
+As long as you have this, errors will turn up the moment (>>) you save the file
+
 #### coc 
+Not used just yet.
+
+
