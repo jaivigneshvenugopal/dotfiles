@@ -135,15 +135,16 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set list
 set listchars=tab:→\ ,nbsp:␣,trail:.
 
+" wrap lines
+set wrap
+set tw=79
+
 " Cusorline configs
 set cursorline
 " hi CursorLine ctermbg=8 "8 = dark gray
 hi CursorLineNr guifg=#af00af
 set cursorline
 set cursorlineopt=number
-
-" Open vim in insert mode for new Files
-autocmd VimEnter * if wordcount()['chars'] == 0 | startinsert | endif
 
 " Colorscheme configs
 let g:vim_monokai_tasty_italic = 1
