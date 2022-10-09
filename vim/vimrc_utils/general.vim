@@ -1,4 +1,5 @@
-" GENERAL  ---------------------------------------------------------------- 
+" GENERAL
+
 " Turn on syntax highlighting.
 syntax on
 

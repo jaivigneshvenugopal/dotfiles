@@ -1,6 +1,5 @@
+" MAPPINGS
 
-" MAPPINGS ---------------------------------------------------------------
-" Mappings code goes here.
 " To map leader key
 let mapleader = " "
 

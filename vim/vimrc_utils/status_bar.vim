@@ -1,4 +1,4 @@
-" Mappings
+" Statusbar
 
 set laststatus=2
 
