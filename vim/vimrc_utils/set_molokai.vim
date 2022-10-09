@@ -1,6 +1,6 @@
-" Colorscheme
-let g:vim_monokai_tasty_italic = 1
-colorscheme tastymonokai
+
+" let g:molokai_original=1
+colorscheme molokai
 
 set t_Co=256
 hi Normal ctermbg=none
