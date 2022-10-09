@@ -191,7 +191,7 @@ call Highlight('jsFutureKeys', { 'fg': s:purple, 'bg': s:none, 'style': s:none }
 
 call Highlight('Folded', { 'fg': s:grey, 'bg': s:none, 'style': s:none })
 call Highlight('FoldColumn', { 'fg': s:light_grey, 'bg': s:none, 'style': s:none })
-call Highlight('Comment', { 'fg': s:grey, 'bg': s:none, 'style': s:italic })
+call Highlight('Comment', { 'fg': s:light_grey, 'bg': s:none, 'style': s:italic })
 
 call Highlight('Label', { 'fg': s:yellow, 'bg': s:none, 'style': s:none })
 call Highlight('String', { 'fg': s:yellow, 'bg': s:none, 'style': s:none })

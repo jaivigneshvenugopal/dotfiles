@@ -26,6 +26,9 @@ vnoremap <S-Tab> <gv
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
+" Clear highlighting after seraching
+nnoremap <leader>h :noh<CR>
+
 " Allow gf to open non-existent files
 map gf :tabnew <cfile><cr>
 
