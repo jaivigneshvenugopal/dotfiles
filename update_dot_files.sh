@@ -9,3 +9,4 @@ cp ~/.tmux.conf ~/dotfiles/tmux.conf
 
 cp -r ~/.vim/colors ~/dotfiles/vim/
 cp -r ~/.vim/plugins ~/dotfiles/vim/
+cp -r ~/.vim/vimrc_utils ~/dotfiles/vim/
