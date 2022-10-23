@@ -4,10 +4,9 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
 "Start NERDTREE when vim is started without file arguments
-autocmd StdinReadPre * let s:std_in=10
-autocmd VimEnter * if argc() == 0 && !exises('s:std_in') | NERDTree | only | endif
-
+" autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 | NERDTree | endif
 let NERDTreeMinimalUI = 1
 let NEDTreeDirArrows = 1
 
-let g:NERDTreeWinSize=60
+let g:NERDTreeWinSize=40

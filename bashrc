@@ -123,9 +123,16 @@ if ! shopt -oq posix; then
 fi
 
 alias editvim='vim ~/.vimrc'
+alias sourcevim='source ~/.vimrc'
+
 alias editbash='vim ~/.bashrc'
+alias sourcebash='source ~/.bashrc'
+
 alias editmux='vim ~/.tmux.conf'
+alias sourcetmux='source ~/.tmux.conf'
+
 alias updatedot='sh ~/update_dot_files.sh; cd ~/dotfiles'
+alias serve='jekyll serve'
 
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
@@ -136,3 +143,12 @@ if [ -d "./code/" ]
 then
     cd code
 fi
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
