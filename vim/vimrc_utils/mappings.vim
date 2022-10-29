@@ -4,7 +4,7 @@
 let mapleader = " "
 
 " quick exit without saving
-map <C-w> :q<CR>
+" map <C-w> :q<CR>
 
 " esc remap
 inoremap jj <esc>
@@ -16,6 +16,14 @@ nnoremap <C-l> :tabnext<CR>
 " to add empty line in normal mode
 map <leader>o o<ESC>
 map <leader>O O<ESC>
+nnoremap <leader>j <C-w>j
+
+" center search results and center when
+" jumping around code
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap <C-o> <C-o>zz
+nnoremap <C-i> <C-i>zz
 
 " indent lines
 nnoremap <Tab> >>_
