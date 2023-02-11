@@ -33,9 +33,16 @@ To switch tabs:
 ctrl h/l
 ```
 
+### Basic
+```
+a # appends after current letter
+x # delete the letter
+s # delete current letter and enter insert mode
+```
+
+
 ### Manipulating words
 ```
-x      # delete letter
 r      # replace letter
 u      # highlighted, lowercase words
 U      # highlighted, uppercase words
@@ -48,7 +55,6 @@ ciw    # change word - works when you are within a word too
 cib    # change everything within paranthesis
 ci[    # change everything within [
 ci{    # change everything within {
-
 ```
 
 ### Horizontal Movements
@@ -80,6 +86,10 @@ vh/vb/vf<lettre> # hightlight letters/words/uptillword backward
 ```
 
 ### Vertical Movements
+Delete lines
+```
+dd # deletes a line
+```
 
 To jump from one para to another:
 ```
@@ -112,8 +122,8 @@ V<move up or down>
 n         # next match
 N         # prev match
 :noh      # resets highlighting
+*         # moves to the next match of the word the cursor is on
 ```
-
 
 ### Plugins
 
@@ -158,8 +168,3 @@ CTRL + t
 
 #### syntastic
 As long as you have this, errors will turn up the moment (>>) you save the file
-
-#### coc 
-Not used just yet.
-
-
