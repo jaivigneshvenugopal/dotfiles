@@ -59,7 +59,7 @@ set noerrorbells visualbell t_vb=
 
 " Enable mouse support. You should avoid relying on this too much, but it can
 " sometimes be convenient.
-set mouse+=a
+set mouse=r
 
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
@@ -125,8 +125,8 @@ set list
 set listchars=tab:→\ ,nbsp:␣,trail:.
 
 " wrap lines
-set wrap
-set tw=79
+" set wrap
+" set tw=79
 
 " Cusorline configs
 set cursorline

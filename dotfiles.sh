@@ -1,10 +1,14 @@
-cp ~/update_dot_files.sh ~/dotfiles/update_dot_files.sh
+# __file__
+cp ~/dotfiles.sh ~/dotfiles/dotfiles.sh
 
+# bash configs
 cp ~/.bashrc ~/dotfiles/bashrc
 cp ~/.bash_profile ~/dotfiles/bash_profile
 
+# tmux configs
 cp ~/.tmux.conf ~/dotfiles/tmux.conf
 
+# vim configs
 cp ~/.vimrc ~/dotfiles/vimrc
 cp -r ~/.vim/autoload ~/dotfiles/vim/
 cp -r ~/.vim/colors ~/dotfiles/vim/
