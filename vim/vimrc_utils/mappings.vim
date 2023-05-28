@@ -44,7 +44,7 @@ map gf :tabnew <cfile><cr>
 nmap <leader>x :!xdg-open %<cr><cr>
 
 " put quotes around a word
-nnoremap <Leader>q" ciw""<Esc>P
-nnoremap <Leader>q' ciw''<Esc>P
-vnoremap <Leader>q" c""<Esc>P
-vnoremap <Leader>q' c''<Esc>P
+nnoremap <Leader>" ciw""<Esc>P
+nnoremap <Leader>' ciw''<Esc>P
+vnoremap <Leader>" c""<Esc>P
+vnoremap <Leader>' c''<Esc>P
