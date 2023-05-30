@@ -3,9 +3,6 @@
 " To map leader key
 let mapleader = " "
 
-" quick exit without saving
-" map <C-w> :q<CR>
-
 " esc remap
 inoremap jj <esc>
 

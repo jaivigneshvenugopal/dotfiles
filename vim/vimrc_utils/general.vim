@@ -124,9 +124,9 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set list
 set listchars=tab:→\ ,nbsp:␣,trail:.
 
-" wrap lines
-" set wrap
-" set tw=79
+" fold method
+set foldmethod=indent
+set foldlevel=99
 
 " Cusorline configs
 set cursorline

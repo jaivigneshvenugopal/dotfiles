@@ -4,7 +4,7 @@ call plug#begin('~/.vim/plugged')
 source ~/.vim/plugins/nerdtree.vim
 source ~/.vim/plugins/fzf.vim
 source ~/.vim/plugins/commentary.vim
-source ~/.vim/plugins/syntastic.vim
+" source ~/.vim/plugins/syntastic.vim
 source ~/.vim/plugins/coc.vim
 source ~/.vim/plugins/floaterm.vim
 
