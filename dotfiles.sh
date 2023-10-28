@@ -1,9 +1,11 @@
-# __file__
 cp ~/dotfiles.sh ~/dotfiles/dotfiles.sh
 
 # bash configs
 cp ~/.bashrc ~/dotfiles/bashrc
 cp ~/.bash_profile ~/dotfiles/bash_profile
+
+# zsh configs
+cp ~/.zshrc ~/dotfiles/zshrc
 
 # tmux configs
 cp ~/.tmux.conf ~/dotfiles/tmux.conf

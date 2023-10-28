@@ -120,9 +120,6 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-" show trailing spaces
-set list
-set listchars=tab:→\ ,nbsp:␣,trail:.
 
 " fold method
 set foldmethod=indent
@@ -130,18 +127,9 @@ set foldlevel=99
 
 " Cusorline configs
 set cursorline
-" hi CursorLine ctermbg=8 "8 = dark gray
 hi CursorLineNr guifg=#af00af
 set cursorline
 set cursorlineopt=number
 
-"" Reference chart of values:
-"   Ps = 0  -> blinking block.
-"   "   Ps = 1  -> blinking block (default).
-"   "   Ps = 2  -> steady block.
-"   "   Ps = 3  -> blinking underline.
-"   "   Ps = 4  -> steady underline.
-"   "   Ps = 5  -> blinking bar (xterm).
-"   "   Ps = 6  -> steady bar (xterm).
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
