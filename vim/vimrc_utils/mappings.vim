@@ -45,3 +45,6 @@ nnoremap <Leader>" ciw""<Esc>P
 nnoremap <Leader>' ciw''<Esc>P
 vnoremap <Leader>" c""<Esc>P
 vnoremap <Leader>' c''<Esc>P
+
+" Allow repetitive paste
+xnoremap p pgvy
