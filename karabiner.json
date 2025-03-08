@@ -1,11 +1,13 @@
 {
-    "description": "Caps Lock ? Ctrl and Esc ? Caps Lock (Only in iTerm2)",
+    "description": "Caps Lock ? Ctrl and Esc ? Caps Lock (Only in iTerm2, VSCode, and Neovide)",
     "manipulators": [
         {
             "conditions": [
                 {
                     "bundle_identifiers": [
-                        "^com\\.googlecode\\.iterm2$"
+                        "^com\\.googlecode\\.iterm2$",
+                        "^com\\.microsoft\\.VSCode$",
+                        "^com\\.neovide\\.Neovide$"
                     ],
                     "type": "frontmost_application_if"
                 }
@@ -15,13 +17,16 @@
                 "modifiers": { "optional": ["any"] }
             },
             "to": [{ "key_code": "left_control" }],
+            "to_if_alone": [{ "key_code": "escape" }],
             "type": "basic"
         },
         {
             "conditions": [
                 {
                     "bundle_identifiers": [
-                        "^com\\.googlecode\\.iterm2$"
+                        "^com\\.googlecode\\.iterm2$",
+                        "^com\\.microsoft\\.VSCode$",
+                        "^com\\.neovide\\.Neovide$"
                     ],
                     "type": "frontmost_application_if"
                 }

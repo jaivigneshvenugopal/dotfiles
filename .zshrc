@@ -116,6 +116,7 @@ fi
 
 alias vi='vim'
 alias vim='nvim'
+alias neo='neovide'
 
 alias editvi='vim ~/.vimrc'
 alias sourcevi='source ~/.vimrc'
